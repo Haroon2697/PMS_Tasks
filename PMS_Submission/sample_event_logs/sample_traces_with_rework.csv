@@ -1,0 +1,15 @@
+CaseID,Activity,Start,Complete
+V001,Body Shop,08:00,08:15
+V001,Paint Shop,08:17,08:35
+V001,Assembly,08:38,09:00
+V001,Inspection,09:02,09:10
+V002,Body Shop,08:05,08:20
+V002,Paint Shop,08:36,08:55
+V002,Assembly,09:00,09:24
+V002,Inspection,09:26,09:34
+V002,Rework,09:36,09:52
+V002,Inspection,09:54,10:02
+V003,Body Shop,08:22,08:38
+V003,Paint Shop,08:56,09:16
+V003,Assembly,09:24,09:46
+V003,Inspection,09:48,09:56
