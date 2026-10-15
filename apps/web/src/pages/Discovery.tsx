@@ -77,6 +77,34 @@ export function DiscoveryPage({ navigate }: { navigate: (p: string) => void }) {
         />
       </div>
 
+      <div
+        className="card"
+        style={{
+          background: 'color-mix(in srgb, var(--series-1) 8%, var(--surface-1))',
+          borderColor: 'var(--series-1)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: 12,
+          padding: '10px 14px',
+        }}
+      >
+        <div>
+          <div style={{ fontWeight: 600, color: 'var(--series-1)', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span>⚡ Discovery Algorithm: Alpha Plus (α⁺) Loop-Corrected</span>
+            <span className="badge sourced">Task 9</span>
+          </div>
+          <div className="small muted" style={{ marginTop: 2 }}>
+            Our discovery engine integrates the Alpha Plus algorithm to correctly isolate rework cycles and short loops.
+            Base Alpha (α) mistakenly treats rework loops as concurrent parallelism.
+          </div>
+        </div>
+        <button className="btn sm primary" onClick={() => navigate('alphacompare')}>
+          Compare Alpha vs Alpha+ in App →
+        </button>
+      </div>
+
       {d.warnings.length > 0 ? (
         <Notice kind="warn" title="What the log does and does not support">
           <ul style={{ margin: '4px 0 0', paddingLeft: 18 }}>
@@ -320,12 +348,15 @@ export function DiscoveryPage({ navigate }: { navigate: (p: string) => void }) {
         />
       </Card>
 
-      <div className="row">
+      <div className="row" style={{ gap: 10, alignItems: 'center' }}>
         <button className="btn primary" onClick={() => navigate('discovered')}>
           Build the queueing model →
         </button>
+        <button className="btn" onClick={() => navigate('alphacompare')}>
+          Compare Alpha vs Alpha+ (Task 9) →
+        </button>
         <span className="small muted">
-          Turns this discovery into an executable model with λ, μ, Kendall notation, W, Wq, L and Lq.
+          Evaluate how loop-handling differences between Alpha and Alpha+ impact queue lead times and model soundness.
         </span>
       </div>
     </div>

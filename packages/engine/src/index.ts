@@ -252,3 +252,19 @@ export {
   eventLogCsvFromVehicles,
   type FromSimulationOptions,
 } from './discovery/fromSimulation.js';
+export {
+  runAlphaAlgorithm,
+  runAlphaPlusAlgorithm,
+  compareAlphaAlgorithms,
+  extractTracesFromLog,
+  type OrderingRelation,
+  type FootprintMatrix,
+  type PetriPlace,
+  type PetriTransition,
+  type PetriArc,
+  type PetriNet,
+  type MaximalPair,
+  type AlphaResult,
+  type DifferenceItem,
+  type AlphaComparison,
+} from './discovery/alphaAlgorithms.js';

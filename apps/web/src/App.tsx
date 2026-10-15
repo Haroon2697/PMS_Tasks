@@ -27,6 +27,7 @@ import { FinancialPage } from './pages/Financial';
 import { EventLogPage } from './pages/EventLog';
 import { DiscoveryPage } from './pages/Discovery';
 import { DiscoveredModelPage } from './pages/DiscoveredModel';
+import { AlphaComparePage } from './pages/AlphaCompare';
 import {
   LiveFactoryPage,
   ReportsPage,
@@ -65,6 +66,7 @@ const ROUTES: Route[] = [
   { id: 'eventlog', label: 'Event Log Import', group: 'Process Mining', title: 'Event Log Import' },
   { id: 'discovery', label: 'Process Discovery', group: 'Process Mining', title: 'Process Discovery' },
   { id: 'discovered', label: 'Discovered Model', group: 'Process Mining', title: 'Discovered Queue Model' },
+  { id: 'alphacompare', label: 'Alpha vs Alpha+ (Task 9)', group: 'Process Mining', title: 'Alpha vs Alpha+ Comparison' },
 
   { id: 'reports', label: 'Reports & Export', group: 'Output', title: 'Reports and Export' },
   { id: 'settings', label: 'Settings', group: 'Output', title: 'Settings' },
@@ -254,6 +256,8 @@ function Page({ route, navigate }: { route: string; navigate: (id: string) => vo
       return <DiscoveryPage navigate={navigate} />;
     case 'discovered':
       return <DiscoveredModelPage navigate={navigate} />;
+    case 'alphacompare':
+      return <AlphaComparePage navigate={navigate} />;
     case 'reports':
       return <ReportsPage />;
     case 'settings':

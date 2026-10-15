@@ -588,3 +588,33 @@ details.expander > summary:hover { color: var(--text-primary); }
 .progress-fill { height: 100%; background: var(--series-1); }
 
 .empty-state { color: var(--text-muted); padding: 28px 12px; text-align: center; font-size: 12px; }
+
+/* Footprint relation badges */
+.relation-tag {
+  display: inline-block;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+.relation-tag.rel-causal {
+  background: color-mix(in srgb, var(--series-1) 18%, var(--surface-1));
+  color: var(--series-1);
+}
+.relation-tag.rel-parallel {
+  background: color-mix(in srgb, var(--series-2) 22%, var(--surface-1));
+  color: var(--series-2);
+}
+.relation-tag.rel-indep {
+  color: var(--text-muted);
+}
+.relation-tag.rel-l1l {
+  background: color-mix(in srgb, var(--series-5) 20%, var(--surface-1));
+  color: var(--series-5);
+}
+.relation-tag.rel-l2l {
+  background: color-mix(in srgb, var(--status-good) 20%, var(--surface-1));
+  color: var(--status-good-text);
+}
