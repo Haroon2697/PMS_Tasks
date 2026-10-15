@@ -8,7 +8,7 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace @vmq/web",
+    "build": "npm run build --workspace @vmq/engine && npm run build --workspace @vmq/web",
     "build:web": "npm run build --workspace @vmq/web",
     "build:engine": "npm run build --workspace @vmq/engine",
     "test": "npm run test --workspace @vmq/engine",
