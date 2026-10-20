@@ -142,6 +142,19 @@ V1,Morning,00:10,00:20`);
     expect(log.rows[0]?.complete).toBe(5);
     expect(log.warnings.some((w) => w.includes('ASSUMED'))).toBe(true);
   });
+
+  it('parses single-timestamp logs with timestamp and resource columns', () => {
+    const log = parseEventLogCsv(
+      `case_id,activity,timestamp,resource\nV001,Body Shop,08:00,Operator 1\nV001,Paint,08:20,Robot 2`,
+    );
+    expect(log.columns.caseId).toBe('case_id');
+    expect(log.columns.activity).toBe('activity');
+    expect(log.columns.start).toBe('timestamp');
+    expect(log.columns.complete).toBeNull();
+    expect(log.columns.resource).toBe('resource');
+    expect(log.rows).toHaveLength(2);
+    expect(log.rows[0]?.resource).toBe('Operator 1');
+  });
 });
 
 /* ------------------------------------------------------------------ */

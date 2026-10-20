@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xes.version="1.0" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+  <extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+  <extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext"/>
+  <classifier name="Activity" keys="concept:name"/>
+  <string key="concept:name" value="IT support tickets (mock log for Alpha vs Alpha+)"/>
+  <trace>
+    <string key="concept:name" value="TCK-5001"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-02T09:00:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T10:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-02T12:14:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-02T12:36:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-02T14:41:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5002"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-02T11:04:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T12:58:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T14:18:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T16:13:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-02T16:42:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-02T16:52:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-02T18:29:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-02T19:35:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5003"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-02T14:03:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T14:51:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T16:11:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T16:30:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T17:02:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T19:10:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-02T21:06:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-02T21:46:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-02T23:25:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5004"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-02T15:12:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T16:13:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-02T18:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-02T20:10:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-02T22:07:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-02T22:42:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-02T23:01:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5005"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-02T17:56:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T19:59:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T20:29:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T22:26:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-02T23:32:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T00:02:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T00:13:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T00:28:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5006"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-02T19:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-02T21:23:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T22:47:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-02T23:53:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T01:45:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T03:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-03T04:54:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T06:02:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T07:36:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T08:52:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5007"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-02T22:15:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T00:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-03T00:44:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T01:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T01:40:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5008"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T00:46:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T00:57:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T02:16:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T03:52:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T04:25:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T04:53:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T06:40:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5009"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T03:36:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T04:38:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T05:54:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T06:29:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T07:40:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T08:06:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T08:59:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5010"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T05:05:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T06:18:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T07:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T08:46:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T10:46:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5011"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T06:31:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T07:42:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T09:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T10:45:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T11:11:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T13:01:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T13:56:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5012"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T07:32:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T08:49:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T09:02:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T10:32:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T12:02:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T13:24:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-03T14:13:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T15:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T16:26:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T17:57:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5013"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T08:12:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T09:56:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T11:06:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T13:05:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T15:10:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T16:00:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-03T16:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T17:37:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T19:00:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T21:05:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5014"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T09:54:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T10:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T11:43:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T12:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T14:10:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T14:35:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-03T16:20:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T18:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T18:43:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T19:51:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5015"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T11:12:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T13:05:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-03T14:54:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T16:37:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T18:32:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T19:15:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T19:59:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5016"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T11:42:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T11:55:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T14:01:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-03T16:03:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T17:09:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T18:29:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5017"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T14:09:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T14:34:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T15:30:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T16:41:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T18:21:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-03T19:42:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-03T20:19:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5018"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T16:23:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T18:13:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T19:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T20:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T20:33:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T21:56:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T22:56:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T00:18:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T02:18:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5019"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T18:30:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T20:00:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T20:59:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T21:16:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-03T22:35:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T00:44:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-04T02:52:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T03:10:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T03:49:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5020"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T19:47:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T21:52:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-03T22:33:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T00:11:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T01:39:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T02:24:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5021"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-03T22:22:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T23:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-03T23:36:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T00:57:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-04T02:17:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T03:23:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T05:02:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5022"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-03T23:48:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T00:29:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-04T01:27:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T02:12:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T04:04:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5023"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T02:26:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T03:36:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T04:01:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T04:35:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-04T05:00:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T06:59:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T08:40:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T09:20:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T10:52:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5024"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T04:47:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T06:20:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-04T07:49:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T08:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T08:53:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5025"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T07:11:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T08:44:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Danish"/>
+      <date key="time:timestamp" value="2026-02-04T10:52:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T11:14:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T11:58:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T13:21:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5026"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T09:57:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T11:43:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T13:24:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T13:53:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T14:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T14:43:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-04T16:09:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Nida"/>
+      <date key="time:timestamp" value="2026-02-04T16:49:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T17:23:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5027"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-04T12:53:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T14:40:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-04T16:48:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T18:33:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-2"/>
+      <date key="time:timestamp" value="2026-02-04T19:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5028"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-04T15:07:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T17:00:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-04T17:34:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T18:31:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T19:47:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5029"/>
+    <event>
+      <string key="concept:name" value="Receive call"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T17:54:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T19:46:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Ask customer for details"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T21:39:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Kamran"/>
+      <date key="time:timestamp" value="2026-02-04T21:50:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-04T23:26:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T23:41:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-05T01:47:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCK-5030"/>
+    <event>
+      <string key="concept:name" value="Receive email"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mailbox"/>
+      <date key="time:timestamp" value="2026-02-04T18:46:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Analyze issue"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Mehwish"/>
+      <date key="time:timestamp" value="2026-02-04T19:28:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Implement fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Hira"/>
+      <date key="time:timestamp" value="2026-02-04T20:42:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Test fix"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="QA-Saad"/>
+      <date key="time:timestamp" value="2026-02-04T21:19:00.000+00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Close ticket"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="org:resource" value="Helpdesk-1"/>
+      <date key="time:timestamp" value="2026-02-04T21:51:00.000+00:00"/>
+    </event>
+  </trace>
+</log>

@@ -12,7 +12,7 @@
  * persistence is available.
  */
 
-import { useEffect, useState } from 'react';
+import { Component, useEffect, useState, type ErrorInfo, type ReactNode } from 'react';
 import { StoreProvider, useStore } from './state/store';
 import { OverviewPage } from './pages/Overview';
 import { NetworkModelPage } from './pages/NetworkModel';
@@ -267,10 +267,65 @@ function Page({ route, navigate }: { route: string; navigate: (id: string) => vo
   }
 }
 
+interface ErrorBoundaryProps {
+  children: ReactNode;
+}
+
+interface ErrorBoundaryState {
+  hasError: boolean;
+  error: Error | null;
+}
+
+class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error('Uncaught application error:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: 32, maxWidth: 800, margin: '40px auto', fontFamily: 'system-ui, sans-serif' }}>
+          <h2 style={{ color: 'var(--status-critical, #d03b3b)', marginBottom: 16 }}>An unexpected error occurred</h2>
+          <div style={{ background: 'var(--surface-1, #1a1a19)', color: 'var(--text-primary, #f2f2ef)', padding: 16, borderRadius: 6, marginBottom: 16, overflowX: 'auto', fontSize: 13 }}>
+            <code>{this.state.error?.message ?? 'Unknown error'}</code>
+            {this.state.error?.stack && (
+              <pre style={{ marginTop: 12, fontSize: 11, color: 'var(--text-muted, #898781)', whiteSpace: 'pre-wrap' }}>
+                {this.state.error.stack}
+              </pre>
+            )}
+          </div>
+          <button
+            className="btn primary"
+            onClick={() => {
+              this.setState({ hasError: false, error: null });
+              window.location.hash = 'overview';
+              window.location.reload();
+            }}
+          >
+            Reload Application
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   return (
-    <StoreProvider>
-      <Shell />
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <Shell />
+      </StoreProvider>
+    </ErrorBoundary>
   );
 }

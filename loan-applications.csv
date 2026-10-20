@@ -1,0 +1,242 @@
+case_id,activity,timestamp,resource
+LA-1001,Submit application,2026-01-05 08:30:00,Online portal
+LA-1001,Check credit,2026-01-05 11:20:00,Ayesha
+LA-1001,Verify documents,2026-01-05 14:55:00,Hamza
+LA-1001,Assess risk,2026-01-05 18:06:00,Usman
+LA-1001,Approve loan,2026-01-05 20:35:00,Fatima
+LA-1001,Sign contract,2026-01-05 22:24:00,Ali
+LA-1002,Submit application,2026-01-05 11:39:00,Online portal
+LA-1002,Verify documents,2026-01-05 13:07:00,Sana
+LA-1002,Check credit,2026-01-05 15:27:00,Ayesha
+LA-1002,Assess risk,2026-01-05 18:10:00,Usman
+LA-1002,Reject loan,2026-01-05 19:38:00,Fatima
+LA-1003,Submit application,2026-01-05 14:51:00,Online portal
+LA-1003,Check credit,2026-01-05 16:28:00,Ayesha
+LA-1003,Verify documents,2026-01-05 17:57:00,Sana
+LA-1003,Assess risk,2026-01-05 21:41:00,Usman
+LA-1003,Request more info,2026-01-05 23:55:00,Fatima
+LA-1003,Verify documents,2026-01-06 04:04:00,Hamza
+LA-1003,Check credit,2026-01-06 07:59:00,Ayesha
+LA-1003,Assess risk,2026-01-06 08:40:00,Usman
+LA-1003,Approve loan,2026-01-06 09:15:00,Fatima
+LA-1003,Sign contract,2026-01-06 11:54:00,Ali
+LA-1004,Submit application,2026-01-05 16:56:00,Online portal
+LA-1004,Verify documents,2026-01-05 20:29:00,Hamza
+LA-1004,Check credit,2026-01-05 22:14:00,Bilal
+LA-1004,Assess risk,2026-01-06 00:47:00,Usman
+LA-1004,Request more info,2026-01-06 01:15:00,Usman
+LA-1004,Check credit,2026-01-06 01:55:00,Bilal
+LA-1004,Verify documents,2026-01-06 03:14:00,Sana
+LA-1004,Assess risk,2026-01-06 04:10:00,Usman
+LA-1004,Reject loan,2026-01-06 07:41:00,Fatima
+LA-1005,Submit application,2026-01-05 17:41:00,Online portal
+LA-1005,Check credit,2026-01-05 20:37:00,Bilal
+LA-1005,Verify documents,2026-01-05 22:35:00,Sana
+LA-1005,Assess risk,2026-01-05 23:06:00,Usman
+LA-1005,Request more info,2026-01-05 23:58:00,Fatima
+LA-1005,Check credit,2026-01-06 03:35:00,Bilal
+LA-1005,Verify documents,2026-01-06 06:45:00,Sana
+LA-1005,Assess risk,2026-01-06 07:51:00,Usman
+LA-1005,Request more info,2026-01-06 09:16:00,Usman
+LA-1005,Verify documents,2026-01-06 09:49:00,Hamza
+LA-1005,Check credit,2026-01-06 11:59:00,Bilal
+LA-1005,Assess risk,2026-01-06 13:02:00,Usman
+LA-1005,Approve loan,2026-01-06 13:32:00,Fatima
+LA-1005,Sign contract,2026-01-06 14:05:00,Ali
+LA-1006,Submit application,2026-01-05 20:00:00,Online portal
+LA-1006,Check credit,2026-01-05 21:29:00,Ayesha
+LA-1006,Verify documents,2026-01-05 22:17:00,Hamza
+LA-1006,Assess risk,2026-01-06 00:49:00,Usman
+LA-1006,Approve loan,2026-01-06 02:00:00,Fatima
+LA-1006,Sign contract,2026-01-06 03:11:00,Zainab
+LA-1007,Submit application,2026-01-05 22:24:00,Online portal
+LA-1007,Verify documents,2026-01-05 23:03:00,Sana
+LA-1007,Check credit,2026-01-05 23:25:00,Ayesha
+LA-1007,Assess risk,2026-01-06 02:08:00,Usman
+LA-1007,Approve loan,2026-01-06 03:19:00,Fatima
+LA-1007,Sign contract,2026-01-06 04:49:00,Ali
+LA-1008,Submit application,2026-01-05 23:56:00,Online portal
+LA-1008,Verify documents,2026-01-06 01:59:00,Sana
+LA-1008,Check credit,2026-01-06 02:40:00,Bilal
+LA-1008,Assess risk,2026-01-06 04:58:00,Usman
+LA-1008,Request more info,2026-01-06 06:45:00,Fatima
+LA-1008,Check credit,2026-01-06 10:47:00,Ayesha
+LA-1008,Verify documents,2026-01-06 12:42:00,Sana
+LA-1008,Assess risk,2026-01-06 13:49:00,Usman
+LA-1008,Request more info,2026-01-06 14:31:00,Fatima
+LA-1008,Check credit,2026-01-06 15:03:00,Bilal
+LA-1008,Verify documents,2026-01-06 18:17:00,Sana
+LA-1008,Assess risk,2026-01-06 21:34:00,Usman
+LA-1008,Approve loan,2026-01-07 00:57:00,Fatima
+LA-1008,Sign contract,2026-01-07 02:59:00,Ali
+LA-1009,Submit application,2026-01-06 01:14:00,Online portal
+LA-1009,Check credit,2026-01-06 05:02:00,Bilal
+LA-1009,Verify documents,2026-01-06 09:00:00,Hamza
+LA-1009,Assess risk,2026-01-06 10:40:00,Usman
+LA-1009,Reject loan,2026-01-06 11:29:00,Fatima
+LA-1010,Submit application,2026-01-06 02:18:00,Online portal
+LA-1010,Verify documents,2026-01-06 03:44:00,Hamza
+LA-1010,Check credit,2026-01-06 05:36:00,Ayesha
+LA-1010,Assess risk,2026-01-06 06:26:00,Usman
+LA-1010,Reject loan,2026-01-06 09:32:00,Fatima
+LA-1011,Submit application,2026-01-06 05:29:00,Online portal
+LA-1011,Check credit,2026-01-06 08:40:00,Ayesha
+LA-1011,Verify documents,2026-01-06 12:03:00,Sana
+LA-1011,Assess risk,2026-01-06 15:26:00,Usman
+LA-1011,Reject loan,2026-01-06 19:28:00,Fatima
+LA-1012,Submit application,2026-01-06 07:03:00,Online portal
+LA-1012,Verify documents,2026-01-06 10:38:00,Sana
+LA-1012,Check credit,2026-01-06 14:10:00,Ayesha
+LA-1012,Assess risk,2026-01-06 17:10:00,Usman
+LA-1012,Request more info,2026-01-06 18:20:00,Fatima
+LA-1012,Verify documents,2026-01-06 22:07:00,Hamza
+LA-1012,Check credit,2026-01-07 02:21:00,Bilal
+LA-1012,Assess risk,2026-01-07 05:22:00,Usman
+LA-1012,Approve loan,2026-01-07 05:56:00,Fatima
+LA-1012,Sign contract,2026-01-07 09:06:00,Zainab
+LA-1013,Submit application,2026-01-06 08:25:00,Online portal
+LA-1013,Check credit,2026-01-06 10:39:00,Ayesha
+LA-1013,Verify documents,2026-01-06 13:52:00,Sana
+LA-1013,Assess risk,2026-01-06 14:28:00,Usman
+LA-1013,Approve loan,2026-01-06 18:43:00,Fatima
+LA-1013,Sign contract,2026-01-06 19:55:00,Zainab
+LA-1014,Submit application,2026-01-06 11:02:00,Online portal
+LA-1014,Verify documents,2026-01-06 11:58:00,Sana
+LA-1014,Check credit,2026-01-06 15:12:00,Ayesha
+LA-1014,Assess risk,2026-01-06 15:50:00,Usman
+LA-1014,Request more info,2026-01-06 17:03:00,Fatima
+LA-1014,Verify documents,2026-01-06 18:55:00,Hamza
+LA-1014,Check credit,2026-01-06 21:24:00,Ayesha
+LA-1014,Assess risk,2026-01-07 00:49:00,Usman
+LA-1014,Request more info,2026-01-07 04:04:00,Fatima
+LA-1014,Check credit,2026-01-07 04:57:00,Ayesha
+LA-1014,Verify documents,2026-01-07 07:14:00,Hamza
+LA-1014,Assess risk,2026-01-07 08:56:00,Usman
+LA-1014,Approve loan,2026-01-07 12:20:00,Fatima
+LA-1014,Sign contract,2026-01-07 13:42:00,Ali
+LA-1015,Submit application,2026-01-06 13:38:00,Online portal
+LA-1015,Check credit,2026-01-06 17:47:00,Bilal
+LA-1015,Verify documents,2026-01-06 19:02:00,Hamza
+LA-1015,Assess risk,2026-01-06 21:03:00,Usman
+LA-1015,Reject loan,2026-01-06 23:34:00,Fatima
+LA-1016,Submit application,2026-01-06 17:19:00,Online portal
+LA-1016,Verify documents,2026-01-06 18:47:00,Hamza
+LA-1016,Check credit,2026-01-06 19:08:00,Bilal
+LA-1016,Assess risk,2026-01-06 22:55:00,Usman
+LA-1016,Reject loan,2026-01-07 01:20:00,Fatima
+LA-1017,Submit application,2026-01-06 20:59:00,Online portal
+LA-1017,Check credit,2026-01-06 23:08:00,Bilal
+LA-1017,Verify documents,2026-01-07 01:09:00,Sana
+LA-1017,Assess risk,2026-01-07 05:12:00,Usman
+LA-1017,Approve loan,2026-01-07 08:22:00,Fatima
+LA-1017,Sign contract,2026-01-07 12:38:00,Ali
+LA-1018,Submit application,2026-01-07 00:34:00,Online portal
+LA-1018,Check credit,2026-01-07 03:48:00,Bilal
+LA-1018,Verify documents,2026-01-07 06:54:00,Sana
+LA-1018,Assess risk,2026-01-07 07:29:00,Usman
+LA-1018,Request more info,2026-01-07 09:16:00,Usman
+LA-1018,Verify documents,2026-01-07 12:21:00,Hamza
+LA-1018,Check credit,2026-01-07 16:34:00,Bilal
+LA-1018,Assess risk,2026-01-07 18:13:00,Usman
+LA-1018,Approve loan,2026-01-07 19:05:00,Fatima
+LA-1018,Sign contract,2026-01-07 22:50:00,Ali
+LA-1019,Submit application,2026-01-07 03:43:00,Online portal
+LA-1019,Check credit,2026-01-07 04:46:00,Ayesha
+LA-1019,Verify documents,2026-01-07 08:54:00,Hamza
+LA-1019,Assess risk,2026-01-07 11:42:00,Usman
+LA-1019,Request more info,2026-01-07 14:28:00,Fatima
+LA-1019,Check credit,2026-01-07 18:32:00,Bilal
+LA-1019,Verify documents,2026-01-07 21:37:00,Hamza
+LA-1019,Assess risk,2026-01-07 22:17:00,Usman
+LA-1019,Request more info,2026-01-07 23:08:00,Usman
+LA-1019,Verify documents,2026-01-07 23:57:00,Hamza
+LA-1019,Check credit,2026-01-08 02:42:00,Ayesha
+LA-1019,Assess risk,2026-01-08 03:22:00,Usman
+LA-1019,Approve loan,2026-01-08 07:26:00,Fatima
+LA-1019,Sign contract,2026-01-08 09:34:00,Ali
+LA-1020,Submit application,2026-01-07 07:07:00,Online portal
+LA-1020,Verify documents,2026-01-07 11:09:00,Sana
+LA-1020,Check credit,2026-01-07 12:05:00,Bilal
+LA-1020,Assess risk,2026-01-07 13:45:00,Usman
+LA-1020,Approve loan,2026-01-07 15:37:00,Fatima
+LA-1020,Sign contract,2026-01-07 17:11:00,Zainab
+LA-1021,Submit application,2026-01-07 09:59:00,Online portal
+LA-1021,Check credit,2026-01-07 11:15:00,Bilal
+LA-1021,Verify documents,2026-01-07 12:16:00,Sana
+LA-1021,Assess risk,2026-01-07 16:12:00,Usman
+LA-1021,Request more info,2026-01-07 16:59:00,Usman
+LA-1021,Verify documents,2026-01-07 18:23:00,Hamza
+LA-1021,Check credit,2026-01-07 20:52:00,Bilal
+LA-1021,Assess risk,2026-01-07 21:41:00,Usman
+LA-1021,Approve loan,2026-01-07 23:35:00,Fatima
+LA-1021,Sign contract,2026-01-08 03:42:00,Zainab
+LA-1022,Submit application,2026-01-07 12:52:00,Online portal
+LA-1022,Check credit,2026-01-07 14:24:00,Ayesha
+LA-1022,Verify documents,2026-01-07 15:55:00,Hamza
+LA-1022,Assess risk,2026-01-07 18:29:00,Usman
+LA-1022,Reject loan,2026-01-07 21:16:00,Fatima
+LA-1023,Submit application,2026-01-07 15:28:00,Online portal
+LA-1023,Verify documents,2026-01-07 15:54:00,Hamza
+LA-1023,Check credit,2026-01-07 19:52:00,Bilal
+LA-1023,Assess risk,2026-01-07 21:56:00,Usman
+LA-1023,Approve loan,2026-01-08 01:55:00,Fatima
+LA-1023,Sign contract,2026-01-08 04:00:00,Zainab
+LA-1024,Submit application,2026-01-07 17:02:00,Online portal
+LA-1024,Verify documents,2026-01-07 18:44:00,Sana
+LA-1024,Check credit,2026-01-07 20:57:00,Bilal
+LA-1024,Assess risk,2026-01-08 00:42:00,Usman
+LA-1024,Request more info,2026-01-08 02:39:00,Fatima
+LA-1024,Verify documents,2026-01-08 04:46:00,Sana
+LA-1024,Check credit,2026-01-08 07:56:00,Ayesha
+LA-1024,Assess risk,2026-01-08 11:35:00,Usman
+LA-1024,Request more info,2026-01-08 13:35:00,Fatima
+LA-1024,Verify documents,2026-01-08 15:23:00,Hamza
+LA-1024,Check credit,2026-01-08 19:30:00,Bilal
+LA-1024,Assess risk,2026-01-08 22:03:00,Usman
+LA-1024,Approve loan,2026-01-08 22:27:00,Fatima
+LA-1024,Sign contract,2026-01-09 01:45:00,Zainab
+LA-1025,Submit application,2026-01-07 18:57:00,Online portal
+LA-1025,Check credit,2026-01-07 22:28:00,Bilal
+LA-1025,Verify documents,2026-01-08 00:20:00,Sana
+LA-1025,Assess risk,2026-01-08 00:41:00,Usman
+LA-1025,Approve loan,2026-01-08 02:53:00,Fatima
+LA-1025,Sign contract,2026-01-08 03:43:00,Zainab
+LA-1026,Submit application,2026-01-07 20:59:00,Online portal
+LA-1026,Verify documents,2026-01-07 23:30:00,Hamza
+LA-1026,Check credit,2026-01-08 02:56:00,Ayesha
+LA-1026,Assess risk,2026-01-08 06:50:00,Usman
+LA-1026,Reject loan,2026-01-08 09:31:00,Fatima
+LA-1027,Submit application,2026-01-07 22:45:00,Online portal
+LA-1027,Verify documents,2026-01-08 01:02:00,Hamza
+LA-1027,Check credit,2026-01-08 02:47:00,Bilal
+LA-1027,Assess risk,2026-01-08 07:06:00,Usman
+LA-1027,Request more info,2026-01-08 08:24:00,Usman
+LA-1027,Check credit,2026-01-08 09:33:00,Ayesha
+LA-1027,Verify documents,2026-01-08 10:49:00,Sana
+LA-1027,Assess risk,2026-01-08 12:39:00,Usman
+LA-1027,Approve loan,2026-01-08 13:32:00,Fatima
+LA-1027,Sign contract,2026-01-08 15:57:00,Zainab
+LA-1028,Submit application,2026-01-08 01:30:00,Online portal
+LA-1028,Check credit,2026-01-08 02:38:00,Bilal
+LA-1028,Verify documents,2026-01-08 06:44:00,Sana
+LA-1028,Assess risk,2026-01-08 08:11:00,Usman
+LA-1028,Reject loan,2026-01-08 09:26:00,Fatima
+LA-1029,Submit application,2026-01-08 05:05:00,Online portal
+LA-1029,Verify documents,2026-01-08 09:21:00,Hamza
+LA-1029,Check credit,2026-01-08 09:42:00,Bilal
+LA-1029,Assess risk,2026-01-08 11:40:00,Usman
+LA-1029,Reject loan,2026-01-08 14:19:00,Fatima
+LA-1030,Submit application,2026-01-08 06:19:00,Online portal
+LA-1030,Check credit,2026-01-08 09:52:00,Ayesha
+LA-1030,Verify documents,2026-01-08 13:05:00,Sana
+LA-1030,Assess risk,2026-01-08 13:51:00,Usman
+LA-1030,Request more info,2026-01-08 16:46:00,Usman
+LA-1030,Check credit,2026-01-08 18:45:00,Bilal
+LA-1030,Verify documents,2026-01-08 21:04:00,Hamza
+LA-1030,Assess risk,2026-01-08 22:24:00,Usman
+LA-1030,Request more info,2026-01-09 01:34:00,Usman
+LA-1030,Check credit,2026-01-09 04:07:00,Bilal
+LA-1030,Verify documents,2026-01-09 04:31:00,Sana
+LA-1030,Assess risk,2026-01-09 07:32:00,Usman
+LA-1030,Approve loan,2026-01-09 11:27:00,Fatima
+LA-1030,Sign contract,2026-01-09 13:00:00,Zainab

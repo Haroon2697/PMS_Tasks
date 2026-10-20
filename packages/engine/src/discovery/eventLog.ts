@@ -71,10 +71,10 @@ export interface ParsedEventLog {
 /* ------------------------------------------------------------------ */
 
 const SYNONYMS = {
-  caseId: ['caseid', 'case', 'case_id', 'caseno', 'case id', 'vehicle', 'vehicleid', 'vehicle_id', 'job', 'jobid', 'order', 'orderid', 'instance', 'trace', 'traceid'],
+  caseId: ['caseid', 'case', 'case_id', 'caseno', 'case id', 'case:concept:name', 'vehicle', 'vehicleid', 'vehicle_id', 'job', 'jobid', 'order', 'orderid', 'instance', 'trace', 'traceid'],
   activity: ['activity', 'task', 'step', 'process', 'operation', 'station', 'event', 'action', 'activityname', 'concept:name'],
-  start: ['start', 'starttime', 'start_time', 'start time', 'begin', 'begintime', 'starttimestamp', 'start_timestamp', 'from', 'arrival', 'servicestart'],
-  complete: ['complete', 'completion', 'completetime', 'complete_time', 'complete time', 'end', 'endtime', 'end_time', 'finish', 'finishtime', 'completed', 'time:timestamp', 'to', 'serviceend'],
+  start: ['start', 'starttime', 'start_time', 'start time', 'begin', 'begintime', 'starttimestamp', 'start_timestamp', 'from', 'arrival', 'servicestart', 'timestamp', 'time:timestamp', 'datetime', 'date_time', 'date', 'time'],
+  complete: ['complete', 'completion', 'completetime', 'complete_time', 'complete time', 'end', 'endtime', 'end_time', 'finish', 'finishtime', 'completed', 'to', 'serviceend', 'end_timestamp', 'endtimestamp'],
   resource: ['resource', 'worker', 'operator', 'server', 'machine', 'org:resource', 'performer'],
 } as const;
 
@@ -230,6 +230,10 @@ export function parseEventLogCsv(text: string, options: ParseOptions = {}): Pars
     complete: options.columns?.complete ?? matchColumn(headers, SYNONYMS.complete),
     resource: options.columns?.resource ?? matchColumn(headers, SYNONYMS.resource),
   };
+
+  if (columns.complete && columns.complete === columns.start) {
+    columns.complete = null;
+  }
 
   const missing: string[] = [];
   if (!columns.caseId) missing.push('case id');
