@@ -101,7 +101,7 @@ export function DiscoveryPage({ navigate }: { navigate: (p: string) => void }) {
           </div>
         </div>
         <button className="btn sm primary" onClick={() => navigate('alphacompare')}>
-          Compare Alpha vs Alpha+ in App →
+          Algorithm Comparison: Alpha vs Alpha+ vs Inductive Miner →
         </button>
       </div>
 
@@ -353,7 +353,7 @@ export function DiscoveryPage({ navigate }: { navigate: (p: string) => void }) {
           Build the queueing model →
         </button>
         <button className="btn" onClick={() => navigate('alphacompare')}>
-          Compare Alpha vs Alpha+ (Task 9) →
+          Compare Discovery Algorithms (Tasks 9 & 10) →
         </button>
         <span className="small muted">
           Evaluate how loop-handling differences between Alpha and Alpha+ impact queue lead times and model soundness.

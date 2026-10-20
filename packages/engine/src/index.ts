@@ -268,3 +268,20 @@ export {
   type DifferenceItem,
   type AlphaComparison,
 } from './discovery/alphaAlgorithms.js';
+export {
+  runInductiveMiner,
+  discoverProcessTree,
+  formatProcessTree,
+  processTreeToPetriNet,
+  calculateTreeMetrics,
+  buildDfg,
+  type ProcessTreeOperator,
+  type ProcessTreeNodeType,
+  type ProcessTreeNode,
+  type DiscoveryRuleRecord,
+  type DiscoveryLogEntry,
+  type InductiveMinerMetrics,
+  type InductiveMinerResult,
+  type Dfg,
+} from './discovery/inductiveMiner.js';
+

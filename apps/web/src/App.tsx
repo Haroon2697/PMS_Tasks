@@ -66,7 +66,7 @@ const ROUTES: Route[] = [
   { id: 'eventlog', label: 'Event Log Import', group: 'Process Mining', title: 'Event Log Import' },
   { id: 'discovery', label: 'Process Discovery', group: 'Process Mining', title: 'Process Discovery' },
   { id: 'discovered', label: 'Discovered Model', group: 'Process Mining', title: 'Discovered Queue Model' },
-  { id: 'alphacompare', label: 'Alpha vs Alpha+ (Task 9)', group: 'Process Mining', title: 'Alpha vs Alpha+ Comparison' },
+  { id: 'alphacompare', label: 'Discovery & Trees (Tasks 9 & 10)', group: 'Process Mining', title: 'Process Discovery: Alpha, Alpha+ & Inductive Miner' },
 
   { id: 'reports', label: 'Reports & Export', group: 'Output', title: 'Reports and Export' },
   { id: 'settings', label: 'Settings', group: 'Output', title: 'Settings' },
