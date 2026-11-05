@@ -1453,6 +1453,12 @@ export function AlphaComparePage({ navigate }: { navigate: (p: string) => void }
               </button>
               <button
                 className="btn"
+                onClick={() => navigate('conformance')}
+              >
+                Process conformance (token + footprint) →
+              </button>
+              <button
+                className="btn"
                 onClick={() => navigate('discovered')}
               >
                 View Discovered Queueing Model →

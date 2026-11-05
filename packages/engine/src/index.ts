@@ -284,4 +284,24 @@ export {
   type InductiveMinerResult,
   type Dfg,
 } from './discovery/inductiveMiner.js';
+export {
+  compareConformance,
+  replayTokenConformance,
+  causalFootprintConformance,
+  buildLogDfg,
+  footprintFromDfg,
+  modelVisibleDfg,
+  buildOverlay,
+  type ConformanceAlgorithmId,
+  type OverlayEdgeKind,
+  type OverlayEdge,
+  type ReplayStep,
+  type TraceReplay,
+  type TokenConformance,
+  type FootprintCellDiff,
+  type CausalFootprintConformance,
+  type ConformanceProfile,
+  type ConformanceComparison,
+} from './discovery/conformance.js';
+export { evaluateModels, type ModelEvaluationResult, type ModelQualityProfile, type QualityMetric } from './discovery/modelEvaluation.js';
 

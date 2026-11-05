@@ -100,9 +100,14 @@ export function DiscoveryPage({ navigate }: { navigate: (p: string) => void }) {
             Base Alpha (α) mistakenly treats rework loops as concurrent parallelism.
           </div>
         </div>
-        <button className="btn sm primary" onClick={() => navigate('alphacompare')}>
-          Algorithm Comparison: Alpha vs Alpha+ vs Inductive Miner →
-        </button>
+        <div className="row" style={{ gap: 8 }}>
+          <button className="btn sm primary" onClick={() => navigate('alphacompare')}>
+            Algorithm comparison →
+          </button>
+          <button className="btn sm" onClick={() => navigate('conformance')}>
+            Process conformance →
+          </button>
+        </div>
       </div>
 
       {d.warnings.length > 0 ? (
