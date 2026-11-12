@@ -14,11 +14,12 @@
  * 6. Live trace tester where professors and students can test arbitrary sequences.
  */
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   compareAlphaAlgorithms,
   runInductiveMiner,
   evaluateModels,
+  extractTracesFromLog,
   type AlphaComparison,
   type DifferenceItem,
   type OrderingRelation,
@@ -120,22 +121,24 @@ export function AlphaComparePage({ navigate }: { navigate: (p: string) => void }
     'Body Shop, Paint, Assembly, Inspection, Rework, Inspection, Dispatch\nBody Shop, Paint, Assembly, Inspection, Dispatch',
   );
   const [useCustom, setUseCustom] = useState<boolean>(false);
-  const [useActiveLog, setUseActiveLog] = useState<boolean>(false);
+  const [useActiveLog, setUseActiveLog] = useState<boolean>(Boolean(eventLog && eventLog.rows.length > 0));
   const [showOnlyDiffs, setShowOnlyDiffs] = useState<boolean>(true);
   const [selectedTreeNode, setSelectedTreeNode] = useState<ProcessTreeNode | null>(null);
   const [expandDiscoveryLog, setExpandDiscoveryLog] = useState<boolean>(true);
   const [activeFaq, setActiveFaq] = useState<string | null>('q1');
 
+  // Automatically switch to imported event log when available
+  useEffect(() => {
+    if (eventLog && eventLog.rows.length > 0) {
+      setUseActiveLog(true);
+      setUseCustom(false);
+    }
+  }, [eventLog]);
+
   // Derive traces for analysis
   const currentTraces = useMemo(() => {
     if (useActiveLog && eventLog && eventLog.rows.length > 0) {
-      const byCase = new Map<string, string[]>();
-      for (const r of eventLog.rows) {
-        const list = byCase.get(r.caseId) ?? [];
-        list.push(r.activity);
-        byCase.set(r.caseId, list);
-      }
-      return Array.from(byCase.values());
+      return extractTracesFromLog(eventLog);
     }
 
     if (useCustom) {

@@ -353,15 +353,18 @@ export function DiscoveryPage({ navigate }: { navigate: (p: string) => void }) {
         />
       </Card>
 
-      <div className="row" style={{ gap: 10, alignItems: 'center' }}>
-        <button className="btn primary" onClick={() => navigate('discovered')}>
+      <div className="row" style={{ gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+        <button className="btn primary" onClick={() => navigate('conformance')}>
+          Run Process Conformance (Token Replay & Footprints) →
+        </button>
+        <button className="btn" onClick={() => navigate('discovered')}>
           Build the queueing model →
         </button>
         <button className="btn" onClick={() => navigate('alphacompare')}>
           Compare Discovery Algorithms (Tasks 9 & 10) →
         </button>
         <span className="small muted">
-          Evaluate how loop-handling differences between Alpha and Alpha+ impact queue lead times and model soundness.
+          Verify conformance between imported event log and discovered models via token replay and causal footprints.
         </span>
       </div>
     </div>

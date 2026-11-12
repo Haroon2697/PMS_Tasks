@@ -18,10 +18,11 @@
  *     trace fitness distribution histogram, model complexity, and root-cause deviation reports.
  */
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   compareAlphaAlgorithms,
   compareConformance,
+  extractTracesFromLog,
   runInductiveMiner,
   type ConformanceAlgorithmId,
   type ConformanceProfile,
@@ -91,7 +92,7 @@ export function ConformancePage({ navigate }: { navigate: (p: string) => void })
   const { eventLog, eventLogSource } = useStore();
   const [presetId, setPresetId] = useState('deviations');
   const [useCustom, setUseCustom] = useState(false);
-  const [useActiveLog, setUseActiveLog] = useState(false);
+  const [useActiveLog, setUseActiveLog] = useState(Boolean(eventLog && eventLog.rows.length > 0));
   const [customText, setCustomText] = useState(
     'Body Shop, Paint, Assembly, Dispatch\nBody Shop, Assembly, Dispatch\nBody Shop, Dispatch, Paint, Assembly',
   );
@@ -102,15 +103,18 @@ export function ConformancePage({ navigate }: { navigate: (p: string) => void })
   const [footprintFilter, setFootprintFilter] = useState<'all' | 'mismatches' | 'causality' | 'parallel' | 'loops'>('all');
   const [footprintSubView, setFootprintSubView] = useState<'3way' | 'selected'>('3way');
 
+  // Automatically switch to imported event log when available
+  useEffect(() => {
+    if (eventLog && eventLog.rows.length > 0) {
+      setUseActiveLog(true);
+      setUseCustom(false);
+      setSelectedCase(0);
+    }
+  }, [eventLog]);
+
   const traces = useMemo(() => {
     if (useActiveLog && eventLog && eventLog.rows.length > 0) {
-      const byCase = new Map<string, string[]>();
-      for (const r of eventLog.rows) {
-        const list = byCase.get(r.caseId) ?? [];
-        list.push(r.activity);
-        byCase.set(r.caseId, list);
-      }
-      return Array.from(byCase.values());
+      return extractTracesFromLog(eventLog);
     }
     if (useCustom) {
       return customText

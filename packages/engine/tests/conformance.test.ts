@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { compareAlphaAlgorithms, runAlphaAlgorithm, runAlphaPlusAlgorithm } from '../src/discovery/alphaAlgorithms.js';
+import {
+  compareAlphaAlgorithms,
+  extractTracesFromLog,
+  runAlphaAlgorithm,
+  runAlphaPlusAlgorithm,
+} from '../src/discovery/alphaAlgorithms.js';
 import { runInductiveMiner } from '../src/discovery/inductiveMiner.js';
+import { parseEventLogCsv } from '../src/discovery/eventLog.js';
 import {
   causalFootprintConformance,
   compareConformance,
@@ -256,5 +262,54 @@ describe('Three-way conformance comparison', () => {
     expect(result.traceCount).toBe(0);
     expect(result.warnings).toContain('No traces to check.');
     expect(result.profiles).toHaveLength(3);
+  });
+});
+
+describe('Conformance on imported event log events', () => {
+  it('runs causal footprint and token replay on parsed CSV event log', () => {
+    const csv = `CaseID,Activity,Start,Complete
+V001,Body Shop,08:00,08:15
+V001,Paint,08:17,08:35
+V001,Assembly,08:38,09:00
+V002,Body Shop,08:05,08:20
+V002,Paint,08:36,08:55
+V002,Assembly,09:00,09:24
+V002,Inspection,09:26,09:34
+V002,Rework,09:36,09:52
+V002,Inspection,09:54,10:02
+V003,Body Shop,08:22,08:38
+V003,Assembly,09:24,09:46`;
+
+    const parsedLog = parseEventLogCsv(csv);
+    expect(parsedLog.rows.length).toBe(11);
+    expect(parsedLog.caseIds).toHaveLength(3);
+
+    const traces = extractTracesFromLog(parsedLog);
+    expect(traces).toHaveLength(3);
+    expect(traces[0]).toEqual(['Body Shop', 'Paint', 'Assembly']);
+    expect(traces[1]).toEqual(['Body Shop', 'Paint', 'Assembly', 'Inspection', 'Rework', 'Inspection']);
+    expect(traces[2]).toEqual(['Body Shop', 'Assembly']); // skipped Paint
+
+    const { alpha, alphaPlus } = compareAlphaAlgorithms(traces);
+    const inductive = runInductiveMiner(traces);
+    const conformance = compareConformance(traces, alpha, alphaPlus, inductive);
+
+    expect(conformance.traceCount).toBe(3);
+    expect(conformance.profiles).toHaveLength(3);
+
+    // Verify token replay on imported log
+    for (const p of conformance.profiles) {
+      expect(p.token.totalTraces).toBe(3);
+      expect(p.token.traces).toHaveLength(3);
+      expect(p.token.produced).toBeGreaterThan(0);
+      expect(p.token.consumed).toBeGreaterThan(0);
+      expect(p.token.fitness).toBeGreaterThan(0);
+      expect(p.token.fitness).toBeLessThanOrEqual(1.0);
+    }
+
+    // Verify causal footprint on imported log
+    expect(conformance.footprint3Way.activities.length).toBeGreaterThanOrEqual(4);
+    expect(conformance.footprint3Way.cells.length).toBeGreaterThan(0);
+    expect(conformance.logFootprint.relations['Body Shop']!['Assembly']).toBeDefined();
   });
 });

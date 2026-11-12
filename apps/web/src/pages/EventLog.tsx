@@ -279,9 +279,15 @@ export function EventLogPage({ navigate }: { navigate: (p: string) => void }) {
             />
           </Card>
 
-          <div className="row">
-            <button className="btn primary" onClick={() => navigate('discovery')}>
-              Discover the process →
+          <div className="row" style={{ gap: 8, flexWrap: 'wrap' }}>
+            <button className="btn primary" onClick={() => navigate('conformance')}>
+              Run Conformance Checking (Token Replay & Causal Footprints) →
+            </button>
+            <button className="btn" onClick={() => navigate('alphacompare')}>
+              Compare Discovery Algorithms (Alpha, Alpha+, IM) →
+            </button>
+            <button className="btn" onClick={() => navigate('discovery')}>
+              Discover Queue Model →
             </button>
           </div>
         </>
